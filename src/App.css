@@ -22,6 +22,10 @@
   color: #61dafb;
 }
 
+.TextArea:focus {
+  background: #F0F8FF;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
