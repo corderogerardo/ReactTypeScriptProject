@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import Link from './components/Link';
+import Link from './components/link/Link';
 import Textarea from './components/Textarea';
 import Button from './components/Button'
 

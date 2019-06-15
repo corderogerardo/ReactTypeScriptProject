@@ -18,12 +18,14 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Link {
+  color: red;
+  background: red;
+
 }
 
 .TextArea:focus {
-  background: #F0F8FF;
+  background: red;
 }
 
 @keyframes App-logo-spin {

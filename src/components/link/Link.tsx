@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+import Styles from './Link.module.scss';
 
 export default function Link() {
 
-  const [Link] = useState("Mi primer Link");
+  const [Link] = useState("Link component");
  
   return (
       		
-	<a href="/">
+	<a href="/" className={Styles.Link}>
  		{Link}
 	</a>
 
