@@ -1,27 +1,37 @@
-import React, { Component } from 'react';
-//import { Link } from 'react-router';
-import isExternal from 'is-url-external';
+import React from 'react';
+import Link from '../Link';
+const isExternal = require("is-url-external");
 
-const propTypes = {
-  to: PropTypes.string.isRequired,
-};
 
 /**
  * Link that also works for external URL's
  */
-export default class LinkDuo extends Component {
-  render() {
-    return isExternal(this.props.to) ?
-      <a
-        href={this.props.to}
-        {...this.props}
-      />
-      :
-      <Link {...this.props} />;
-  }
-}
+const LinkDuo = (props: any) => {
+  let data = props.url;
 
-LinkDuo.propTypes = propTypes;
+  const doSomething = (evt: any) => {
+    console.log("evt ", evt);
+    props.onClick(evt.target);
+  };
+  // size
+  // placeholder
+  // onBlurred
+  // error / true - false
+  // disabled
+  // extraClassNames
 
+  // TextInput
+  // Error
 
-zz
+  // Form House
+
+  return (isExternal(props.to))
+      ?
+        <a
+          href={props.to}
+          {...props}
+        />
+      : <Link data={props.data || ''} onClick={evt => doSomething(evt)} />;
+};
+
+export default LinkDuo;
