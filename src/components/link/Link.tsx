@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import Styles from './Link.module.scss';
 
 export default function Link() {
 
-  const [Link] = useState("Link component");
+ const [Link, setLink] = useState("Componente Link");
  
   return (
       		
-	<a href="/" className={Styles.Link}>
+	<a href="/" className={Styles.Link} >
  		{Link}
 	</a>
 

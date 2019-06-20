@@ -18,16 +18,6 @@
   color: white;
 }
 
-.Link {
-  color: red;
-  background: red;
-
-}
-
-.TextArea:focus {
-  background: red;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
